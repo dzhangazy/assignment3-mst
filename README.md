@@ -5,6 +5,7 @@ Topic: Empirical Comparison of Prim’s and Kruskal’s Algorithms
 Language: Java (Maven Project)
 IDE: IntelliJ IDEA
 Submission: GitHub Repository
+
 📘 Abstract
 
 This project implements and empirically compares two fundamental algorithms for constructing a Minimum Spanning Tree (MST) — Prim’s and Kruskal’s.
@@ -41,6 +42,7 @@ assignment3-mst/
 └── README.md                ← Project report
 
 ⚙️ Implementation Overview
+
 🧩 Prim’s Algorithm
 
 Builds the MST incrementally, always adding the lowest-weight edge that connects a new vertex to the tree.
@@ -96,12 +98,19 @@ O(ElogV)
 🧠 Algorithm Design (OOP)
 Class	Responsibility
 Edge.java	Represents a weighted connection between two vertices.
+
 Graph.java	Stores all vertices and edges, supports JSON import/export.
+
 PrimAlgorithm.java	Implementation of Prim’s MST algorithm with operation tracking.
+
 KruskalAlgorithm.java	Implementation of Kruskal’s MST algorithm using DSU.
+
 MSTMain.java	Loads graphs from input.json, runs both algorithms, saves results to output.json.
+
 Utils.java	Contains helper methods for timing, operations counting, and data formatting.
+
 🧾 Input and Output
+
 📥 Input (input.json)
 
 Contains randomly generated graphs:
@@ -160,8 +169,11 @@ Visualization
 The data from output.json was analyzed using analyze_results.py, producing the comparative plot below:
 
 📊 Results & Discussion
+
 Metric	Prim	Kruskal	Interpretation
+
 Execution Time (ms)	Slightly higher on small graphs	Faster on small dense graphs	Kruskal benefits from edge sorting for small graphs
+
 Operations Count	Increases roughly linearly with vertices	Slightly lower overall	Both consistent with 
 𝑂
 (
@@ -172,6 +184,7 @@ log
 )
 O(ElogV)
 MST Total Cost	Identical	Identical	Confirms correctness of both algorithms
+
 📈 Observations
 
 Prim’s Algorithm shows more stable performance as graph size increases.
@@ -206,16 +219,20 @@ Both	Produce identical MST total cost	Observed	✅ Correct
 <img width="3000" height="3600" alt="empirical_validation" src="https://github.com/user-attachments/assets/6281e0fe-80d5-4390-a24b-540f31d9418a" />
 
 💾 How to Run the Project
+
 1️⃣ Build (Maven)
+
 mvn compile
 
 2️⃣ Run Java Program
+
 mvn exec:java -Dexec.mainClass=mst.MSTMain
 
 
 This reads input.json, executes both algorithms, and writes results to output.json.
 
 3️⃣ Generate Plots (Python)
+
 python analyze_results.py
 
 
