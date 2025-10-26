@@ -231,7 +231,7 @@ mvn compile
 
 2️⃣ Run Java Program
 
-mvn exec:java -Dexec.mainClass=mst.MSTMain
+mvn compile exec:java '-Dexec.mainClass=mst.MSTMain'
 
 
 This reads input.json, executes both algorithms, and writes results to output.json.
