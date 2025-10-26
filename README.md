@@ -1,9 +1,14 @@
 🧮 Assignment 3 — Minimum Spanning Tree (MST)
 Course: Algorithms & Object-Oriented Programming
-Student: Жангазы Бакытжан
+
+Student: Jangazy Bakytzhan
+
 Topic: Empirical Comparison of Prim’s and Kruskal’s Algorithms
+
 Language: Java (Maven Project)
-IDE: IntelliJ IDEA
+
+IDE: Visual Code
+
 Submission: GitHub Repository
 
 📘 Abstract
